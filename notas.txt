@@ -1,0 +1,38 @@
+Comandos de consola para direfentes cosas
+
+BANDERAS EN CONSOLA
+node dist/app.js --base 10 -l=100 --file=hola.txt
+result:
+[
+  'C:\\Program Files\\nodejs\\node.exe',
+  'C:\\Users\\elseb\\OneDrive\\Node.js\\04-multiplication\\dist\\app.js',
+  '--base',
+  '10',
+  '-l=100',
+  '--file=hola.txt'
+]
+
+Hacerlo así es sumamente dificil para eso esta Yarg
+Con yargs muestra ayudas en la consola ejm:
+PS C:\Users\elseb\OneDrive\Node.js\04-multiplication> npm run dev
+
+> 04-multiplication@1.0.0 dev
+> ts-node src/app.ts
+
+Opciones:
+      --help     Muestra ayuda                                        [booleano]
+      --version  Muestra número de versión                            [booleano]
+  -b, --base     Multiplication tabla base                  [número] [requerido]
+
+Falta argumento requerido: b
+
+AYUDA QUE PARA VER EN CONSOLA LA DEBO DE LLAMAR CON EL NPX CON EL COMANDO: npx ts-node src/app --help esto muestra la misma ayuda
+
+PS C:\Users\elseb\OneDrive\Node.js\04-multiplication> npx ts-node src/app --help                          
+Opciones:
+      --help     Muestra ayuda                                        [booleano]
+      --version  Muestra número de versión                            [booleano]
+  -b, --base     Multiplication tabla base                  [número] [requerido]
+
+ con este mismo comando puedo mandarle la base ejm
+ npx ts-node src/app --base 100
